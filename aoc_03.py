@@ -1,11 +1,25 @@
-import numpy as np
-
-x = [75,30,83,83,12,49,71,7,72]
-y = [62,66,55,34,71,55,58,83,0]
-d = 0
-
-for i in range(0,len(x)):
-    d += abs(x[i] - y[i])
-
+x = ["R8","U5","L5","D3"]
+y = ["U7","R6","D4","L4"]
+t = [[],[]]
+t[5000][4990] = 10
+d = 0 
+print(t)
+for inst in x:
+    if inst[:1] == "R":
+        pass
+    elif inst[:1] == "U":
+        d += int(inst[1:])
+    elif inst[:1] == "L":
+        d += int(inst[1:])
+    elif inst[:1] == "D":
+        d += int(inst[1:])
 
 print(d)
+
+#d = 0
+
+#for i in range(0,len(x)):
+#    d += abs(x[i] - y[i])
+
+
+#print(d)
